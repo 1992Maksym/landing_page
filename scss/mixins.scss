@@ -1,0 +1,13 @@
+@mixin container{
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+@mixin link{
+    color: #252B42;
+    text-decoration: none;
+}
+@mixin link_light{
+    color: #737373;
+    text-decoration: none;
+}
