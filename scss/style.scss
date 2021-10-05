@@ -25,7 +25,7 @@ body{
             z-index: 10;
 
             .container{
-                @include container;
+                // @include container;
                 max-height: 104px;
                 display: flex;
                 align-items: center;
@@ -103,7 +103,7 @@ body{
                 position: relative;
 
                 .container{
-                    @include container;
+                    // @include container;
 
                     .main__body{
                         padding: 154px 0 191px 0;
@@ -176,6 +176,44 @@ body{
                     }
                 }
             }
+            .page__services{
+                position: relative;
+                z-index: 2;
+                margin: -111px 0 0 0;
+                .services__container{
+                    .services__body{
+                        margin: 0 -15px;
+                        display: flex;
+                        .services__column{
+                            padding: 0 15px;
+                            flex: 0 1 33.33%;
+                            .services__item{
+                                // height: 100%;
+                                box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+                                padding: 35px 40px;
+                                background: #FFFFFF;
+                                display: flex;
+                                flex-direction: column;
+                                .item__service_icon{}
+                                .item__service_title{
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    line-height: 133%;
+                                }
+                                .item__service_text{
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                            }
+                            .services__item-green{
+                                background-color: #0D5C63;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
         }
         footer{
             
@@ -190,20 +228,24 @@ body{
 @media (min-width: 576px){
     .container{
         max-width: 540px;
+        @include container;
     }}
 @media (min-width: 768px){
     .container{
         max-width: 720px;
+        @include container;
     }}
    
 @media (min-width: 992px){
     .container{
         max-width: 960px;
+        @include container;
     }}
 
  @media (min-width: 1200px){
     .container{
         max-width: 1046px;
+        @include container;
     }}
 
 

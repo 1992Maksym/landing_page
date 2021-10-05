@@ -3,6 +3,7 @@
     body .wrapper header .container{
         display: flex;
         justify-content: space-between;
+        padding: 0 15px;
 
         .burger{
             display: block;
@@ -18,19 +19,39 @@
     }
 }
 @media(max-width:991px){
-    body .wrapper .page .page_main-block .ibg img{
-        opacity: 0.4;
-    }
-}
-@media(max-width:767px){
-    body .wrapper .page .page_main-block .container .main__body{
-        margin: 0 auto;
-        text-align: center;
-        
-        h1{
-            font-size: 52px;
+    body .wrapper .page{
+        .page_main-block .ibg img{
+            opacity: 0.4;
+        }
+        .page__services .services__container .services__body{
+            flex-direction: column;
+            padding: 0 15px;
+        }
+        .page__services .services__container .services__body >:not(:last-child){
+            margin-bottom: 20px;
         }
     }
+    
+}
+@media(max-width:767px){
+    body .wrapper .page {
+        .page_main-block .container .main__body{
+            margin: 0 auto;
+            text-align: center;
+            
+            h1{
+                font-size: 52px;
+            }
+            .main__block-buttons{
+                justify-content: center;
+            }
+        }
+        
+        .page__services .services__container .services__body .services__column .services__item .item__service_title{
+            font-size: 20px;
+        }
+    }
+    
      
 }
 @media(max-width:413px){
@@ -38,9 +59,13 @@
         h1{
             font-size: 48px;
         }
+        .main__block-text{
+            padding: 0 20px;
+        }
          .main__block-buttons{
              flex-direction: column;
              margin: -20px 0;
+             padding: 0 20px;
              .main__button:not(:last-child){
                 margin: 0 0 15px 0;
             }
