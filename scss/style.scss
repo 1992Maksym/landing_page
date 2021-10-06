@@ -10,6 +10,7 @@ body{
     color: #252B42;
     font-size: 14px;
     font-weight: 500;
+    background-color: #fafafa;
 
    .wrapper{
        display: flex;
@@ -189,11 +190,10 @@ body{
                             flex: 0 1 33.33%;
                             .services__item{
                                 // height: 100%;
-                                box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-                                padding: 35px 40px;
-                                background: #FFFFFF;
+                                @include card;
                                 display: flex;
                                 flex-direction: column;
+                                
                                 .item__service_icon{}
                                 .item__service_title{
                                     font-size: 24px;
@@ -204,11 +204,67 @@ body{
                                     font-weight: 500;
                                     font-size: 14px;
                                     line-height: 20px;
+                                    color: $small__text;
                                 }
                             }
-                            .services__item-green{
+                            .services__item:hover{
                                 background-color: #0D5C63;
                                 color: #fff;
+                                .item__service_text{color: #fff;}
+                                .icon__svg{
+                                    fill: #fff;
+                                }
+                            }
+
+                            // .services__item-green{
+                            //     background-color: #0D5C63;
+                            //     color: #fff;
+                            // }
+                        }
+                    }
+                }
+            }
+            .advantages{
+                .advantages__container{
+                    padding: 80px 0;
+    
+                    .advantages__header{
+                        .header__title{
+                            @include header;
+                        }
+                        .header__text{
+                            @include subtitle;
+                            margin: 10px auto 50px;
+                            max-width: 511px;
+                        }
+                    }
+                    .advantages__body{
+                        display: grid;
+                        grid-template-columns: repeat(4,1fr);
+                        grid-gap: 30px;
+                        .advantages__column{
+                            
+                            .advantages__item{
+                                // height: 100%;
+                                display: grid;
+                                grid-template-rows: repeat(3,1fr);
+                                @include card;
+                                .advantages__icon{
+                                    @include card__text;
+                                    min-height: 50px;
+                                    display: flex;
+                                    justify-content: flex-end;
+                                }
+                                .advantages__title{
+                                    margin: 10px auto!important;
+                                    @include card__text;
+                                    font-size: 40px;
+                                }
+                                .advantages__text{
+                                    @include card__text;
+                                    font-size: 16px;
+                                    color: $small__text;
+                                }
                             }
                         }
                     }
