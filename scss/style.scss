@@ -236,15 +236,15 @@ body{
                         .advantages__column{
                             
                             .advantages__item{
-                                // height: 100%;
                                 display: grid;
                                 grid-template-rows: repeat(3,1fr);
+                                align-items: center;
                                 @include card;
                                 .advantages__icon{
                                     @include card__text;
                                     min-height: 50px;
-                                    display: flex;
-                                    justify-content: flex-end;
+                                    display: grid;
+                                    align-items: end;
                                 }
                                 .advantages__title{
                                     margin: 10px auto!important;
