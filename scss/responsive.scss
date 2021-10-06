@@ -30,7 +30,12 @@
         .page__services .services__container .services__body >:not(:last-child){
             margin-bottom: 20px;
         }
+
+        .advantages .advantages__container .advantages__body{
+            grid-template-columns: 1fr 1fr;
+        }
     }
+
     
 }
 @media(max-width:767px){
@@ -53,6 +58,14 @@
     }
     
      
+}
+@media(max-width:530px){
+    body .wrapper .page{
+        .advantages .advantages__container .advantages__body{
+            grid-template-columns: 1fr;
+            padding: 0 20px;
+        }
+    }
 }
 @media(max-width:413px){
     body .wrapper .page .page_main-block .container .main__body{
