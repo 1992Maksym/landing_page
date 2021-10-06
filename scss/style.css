@@ -152,6 +152,7 @@ body {
                 line-height: 20px;
                 color: #737373; }
             body .wrapper .page .page__services .services__container .services__body .services__column .services__item:hover {
+              transform: translateY(-5px);
               background-color: #0D5C63;
               color: #fff; }
               body .wrapper .page .page__services .services__container .services__body .services__column .services__item:hover .item__service_text {
@@ -200,6 +201,14 @@ body {
               text-align: center;
               font-size: 16px;
               color: #737373; }
+          body .wrapper .page .advantages .advantages__container .advantages__body .advantages__column .advantages__item:hover {
+            transform: translateY(-5px);
+            background-color: #0D5C63;
+            color: #fff; }
+            body .wrapper .page .advantages .advantages__container .advantages__body .advantages__column .advantages__item:hover .advantages__text {
+              color: #fff; }
+            body .wrapper .page .advantages .advantages__container .advantages__body .advantages__column .advantages__item:hover .icon__svg {
+              fill: #fff; }
 
 @media (min-width: 576px) {
   .container {

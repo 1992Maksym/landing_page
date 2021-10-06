@@ -208,18 +208,9 @@ body{
                                 }
                             }
                             .services__item:hover{
-                                background-color: #0D5C63;
-                                color: #fff;
                                 .item__service_text{color: #fff;}
-                                .icon__svg{
-                                    fill: #fff;
-                                }
+                                @include card__hover;
                             }
-
-                            // .services__item-green{
-                            //     background-color: #0D5C63;
-                            //     color: #fff;
-                            // }
                         }
                     }
                 }
@@ -266,6 +257,10 @@ body{
                                     color: $small__text;
                                 }
                             }
+                            .advantages__item:hover{
+                                .advantages__text{color: #fff;}
+                                @include card__hover;
+                            }  
                         }
                     }
                 }

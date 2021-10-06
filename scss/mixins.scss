@@ -17,6 +17,14 @@
     background: #FFFFFF;
     transition: all 0.7s ease;
 }
+@mixin card__hover{
+    transform: translateY(-5px);
+    background-color: #0D5C63;
+    color: #fff;
+    .icon__svg{
+        fill: #fff;
+    }
+}
 @mixin header{
     font-size: 40px;
     font-weight: 700;
