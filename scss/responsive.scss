@@ -61,10 +61,19 @@
 }
 @media(max-width:530px){
     body .wrapper .page{
-        .advantages .advantages__container .advantages__body{
-            grid-template-columns: 1fr;
-            padding: 0 20px;
+        .advantages .advantages__container {
+            .advantages__header{
+                padding: 0 20px;
+                .header__title{
+                    font-size: 32px;
+                }
+            }
+            .advantages__body{
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+            }
         }
+         
     }
 }
 @media(max-width:413px){

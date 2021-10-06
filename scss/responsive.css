@@ -31,6 +31,10 @@
   body .wrapper .page .page__services .services__container .services__body .services__column .services__item .item__service_title {
     font-size: 20px; } }
 @media (max-width: 530px) {
+  body .wrapper .page .advantages .advantages__container .advantages__header {
+    padding: 0 20px; }
+    body .wrapper .page .advantages .advantages__container .advantages__header .header__title {
+      font-size: 32px; }
   body .wrapper .page .advantages .advantages__container .advantages__body {
     grid-template-columns: 1fr;
     padding: 0 20px; } }
