@@ -32,15 +32,27 @@
     text-align: center;
 }
 @mixin subtitle{
+    margin: 10px auto 50px;
+    max-width: 511px;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     text-align: center;
     color: $small__text;
+    
 }
 @mixin card__text{
     // width: fit-content;
     margin: 0 auto;
     text-align: center;
     // font-size: $font;
+}
+@mixin item{
+    content:"";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    top: 32px;
+    right: 40px;
+    position: relative;
 }
